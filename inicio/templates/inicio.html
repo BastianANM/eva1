@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    {& load static &}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>{& block title &}Inicio{& endblock &}</title>
+    <li><a href="{% url 'templates:base.html' %}">Inicio</a></li>
 </head>
 <body>
     <main>
-        <h1>Página de inicio</h1>
-        <p>Bienvenido a la aplicación inicio.</p>
+        <h1>Pagina de inicio</h1>
+        <p>Bienvenido a la aplicacion inicio.</p>
     </main>
 </body>
 </html>
