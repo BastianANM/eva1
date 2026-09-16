@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {& load static &}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{& block title &}vista 2 app2{& endblock &}</title>
+    <li><a href="{% url 'templates:base.html' %}">Vista 2</a></li>
+</head>
+<header>
+    <h1>mi proyecto django</h1>
+</header>
+<body>
+    <nav>
+        <a href="{% url 'vista2' %}">Ir a Vista 2</a>
+    </nav>
+    
+</body>
+</html>
