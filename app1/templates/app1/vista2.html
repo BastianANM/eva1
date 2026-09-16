@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {& load static &}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{& block title &}Vista 2 app1{& endblock &}</title>
+    <li><a href="{% url 'templates:base.html' %}">Vista 2</a></li>
+</head>
+<body>
+    <h1></h1>
+    <nav>
+        <a href="{% url 'vista1' %}">Ir a Vista 1</a>
+    </nav>
+</body>
+</html>
