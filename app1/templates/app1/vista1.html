@@ -7,10 +7,14 @@
     <title>{& block title &}Vista 1 app1{& endblock &}</title>
     <li><a href="{% url 'templates:base.html' %}">Vista 1</a></li>
 </head>
+<header>
+    <h1>mi proyecto django</h1>
+</header>
 <body>
     <h1>Vista 1</h1>
     <nav>
         <a href="{% url 'vista2' %}">Ir a Vista 2</a>
+        <img src="{% static 'img/images.jpg' %}" alt="Imagen 1">
     </nav>
 </body>
 </html>
