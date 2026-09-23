@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    {& load static &}
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{& block title &}Inicio{& endblock &}</title>
-    <li><a href="{% url 'templates:base.html' %}">Inicio</a></li>
+    <title>{% block title %}Inicio{% endblock %}</title>
+    <li><a href="{% url 'templates:base.html' %}">Vista inicio</a></li>
 </head>
 <body>
     <main>

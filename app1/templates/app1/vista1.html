@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    {& load static &}
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{& block title &}Vista 1 app1{& endblock &}</title>
+    <title>{% block title %}Vista 1 app1{% endblock %}</title>
     <li><a href="{% url 'templates:base.html' %}">Vista 1</a></li>
 </head>
 <header>
@@ -13,8 +13,8 @@
 <body>
     <h1>Vista 1</h1>
     <nav>
-        <a href="{% url 'vista2' %}">Ir a Vista 2</a>
-        <img src="{% static 'img/images.png' %}" alt="Imagen 1">
+        <a href="{% url 'app1:vista2' %}">Ir a Vista 2</a>
+
     </nav>
 </body>
 </html>

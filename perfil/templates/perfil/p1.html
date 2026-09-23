@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Perfil 1{% endblock %}
+{% block content %}
+    <h1>Perfil 1</h1>
+    <ul>
+        <li>Nombre: {{nombre}}</li>
+        <li>Apellido: {{apellido}}</li>
+        <li>Año: {{año}}</li>
+        <li>Edad: {{edad}}</li>
+    </ul>
+    <img src="{% static 'images/luda.png' %}" alt="perfil 1" width="200px" height="200px">
+
+{% endblock %}

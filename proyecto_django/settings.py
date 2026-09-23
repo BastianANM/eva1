@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'inicio',
     'app1',
     'app2',
+    'perfil',
 ]
 
 MIDDLEWARE = [

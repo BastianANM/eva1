@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    {& load static &}
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{& block title &}django proyecto{& endblock &}</title>
+    <title>{% block title %}django proyecto{% endblock %}</title>
     <li><a href="{% url 'app1:vista1' %}">Vista 1</a></li>
     <li><a href="{% url 'app1:vista2' %}">Vista 2</a></li>
     <li><a href="{% url 'app2:vista1' %}">Vista 1</a></li>
     <li><a href="{% url 'app2:vista2' %}">Vista 2</a></li>
+    <li><a href="{% url 'perfil:p1' %}">Perfil 1</a></li>
 </head>
 <body>
     
